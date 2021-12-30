@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Closure</title>
+  </head>
+  <body>
+    <!-- Function Closures -->
+
+    <!-- 1. Inside Function -->
+
+    <h1 style="text-align: center">Function Closures</h1>
+
+    <h2>JavaScript Functions</h2>
+    <p>A function can access variables defined inside the function:</p>
+    <p id="demo"></p>
+
+    <!-- 2. Outside Function -->
+    <h2>JavaScript Functions</h2>
+    <p>A function can access variables defined outside the function:</p>
+
+    <p id="demo2"></p>
+
+    <script>
+      // 1. Inside Function
+      function myFunction() {
+        let a = 4;
+        document.getElementById("demo").innerHTML = a * a;
+      }
+
+      myFunction();
+
+      // 2. Outside function
+
+      let b = 5;
+
+      function myFunction2() {
+        document.getElementById("demo2").innerHTML = b * b;
+      }
+
+      myFunction2();
+    </script>
+  </body>
+</html>
